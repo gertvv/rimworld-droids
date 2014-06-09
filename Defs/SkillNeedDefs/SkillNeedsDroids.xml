@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SkillNeeds>
+
+	<SkillNeedDef Class="SkillNeedDef_BaseBonus">
+		<defName>BuildDroidTime</defName>
+		<skill>Crafting</skill>
+		<baseFactor>2.5</baseFactor>
+		<bonusFactor>-0.11</bonusFactor>
+		<description>Builds droids in {0}% the normal time.</description>
+	</SkillNeedDef>
+
+</SkillNeeds>

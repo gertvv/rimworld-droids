@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThinkTrees>
+	<ThinkTreeDef>
+		<defName>DroidThinkTree</defName>
+		<thinkRoot Class="AI.ThinkNode_Priority">
+			<subNodes>
+				<li Class="AI.JobGiver_Droid" />
+				<li Class="AI.JobGiver_WanderAnywhere" />
+				<li Class="AI.JobGiver_IdleError"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</ThinkTrees>

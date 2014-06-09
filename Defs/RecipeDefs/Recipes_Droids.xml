@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>BuildDroidPart</defName>
+		<label>Build droid part</label>
+		<description>Builds a droid part (needed to build support droids).</description>
+		<jobString>Building droid part.</jobString>
+		<workAmount>500</workAmount>
+		<workEffect>ConstructMetal</workEffect>
+		<workTimeSkillNeed>BuildDroidTime</workTimeSkillNeed>
+		<sustainerSoundDef>Recipe_ButcherCorpseMechanoid</sustainerSoundDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Metal</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>DroidPart</thingDef>
+				<count>1</count>
+			</li>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Metal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<skillGains>
+			<li>
+				<skill>Crafting</skill>
+				<xp>75</xp>
+			</li>
+		</skillGains>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BuildDroidTransport</defName>
+		<label>Build transport droid</label>
+		<description>Builds a transport droid to automatically haul things around.</description>
+		<jobString>Building transport droid.</jobString>
+		<workAmount>2000</workAmount>
+		<workEffect>ConstructMetal</workEffect>
+		<workTimeSkillNeed>BuildDroidTime</workTimeSkillNeed>
+		<sustainerSoundDef>Recipe_ButcherCorpseMechanoid</sustainerSoundDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DroidPart</li>
+					</thingDefs>
+				</filter>
+				<count>4</count> <!-- 300 metal -->
+			</li>
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>DroidTransportInactive</thingDef>
+				<count>1</count>
+			</li>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DroidPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<skillGains>
+			<li>
+				<skill>Crafting</skill>
+				<xp>350</xp>
+			</li>
+		</skillGains>
+	</RecipeDef>
+
+	
+	
+</RecipeDefs>

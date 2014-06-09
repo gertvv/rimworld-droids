@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+	<PawnKindDef>
+		<defName>DroidTransport</defName>
+		<label>Transport Droid</label>
+		<race>Droid</race>
+		<backStoryCategory>Hauling</backStoryCategory> <!-- The WorkType this droid accepts -->
+		<standardBodyGraphicPath>Things/Pawn/Droid/Transport</standardBodyGraphicPath>
+	</PawnKindDef>
+
+</PawnKindDefs>

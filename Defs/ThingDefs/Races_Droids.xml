@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef>
+		<defName>Droid</defName>
+		<eType>Pawn</eType>
+		<thingClass>DroidPawn</thingClass>
+		<label>Support droid</label>
+		
+		<category>Pawn</category>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<useStandardHealth>false</useStandardHealth>
+		<hasTooltip>true</hasTooltip>
+		<drawGUIOverlay>true</drawGUIOverlay>
+
+		<maxHealth>100</maxHealth>
+		<overdraw>false</overdraw>
+		<soundBulletHit>BulletImpactMetal</soundBulletHit>
+		<flammability>0</flammability>
+		
+		<sunShadowInfo>
+			<baseWidth>0.4</baseWidth>
+			<baseHeight>0.4</baseHeight>
+			<tallness>0.2</tallness>
+		</sunShadowInfo>
+		
+		<race>
+			<mechanoid>true</mechanoid>
+			<hasStory>false</hasStory>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<isFlesh>false</isFlesh>
+			
+			<thinkTree>DroidThinkTree</thinkTree>
+			<walkSpeed>0.8</walkSpeed>
+			<meleeDamage>0</meleeDamage>
+			<bodySize>1.0</bodySize>
+			<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+			<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		
+		<killedLeavings>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>50</count>
+			</li>
+		</killedLeavings>
+	</ThingDef>
+
+</ThingDefs>

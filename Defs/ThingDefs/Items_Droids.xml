@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef>
+		<defName>DroidTransportInactive</defName>
+		<label>Transport Droid (inactive)</label>
+		<category>Item</category>
+		<thingClass>DroidInactive</thingClass>
+		<tickerType>Normal</tickerType>
+		<texturePath>Things/Special/Droid/TransportInactive</texturePath>
+		<overdraw>false</overdraw>
+		<useStandardHealth>true</useStandardHealth>
+		<maxHealth>100</maxHealth>
+		<selectable>true</selectable>
+		<sunShadowInfo>
+			<baseWidth>0.4</baseWidth>
+			<baseHeight>0.4</baseHeight>
+			<tallness>0.2</tallness>
+		</sunShadowInfo>
+	</ThingDef>
+
+  	<ThingDef>
+	  	<defName>DroidPart</defName>
+	  	<label>Droid part</label>
+	  	<category>Item</category>
+	  	<thingClass>Thing</thingClass>
+	  	<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<maxHealth>100</maxHealth>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+	 	<pathCost>55</pathCost>
+	 	<overdraw>false</overdraw>
+		<drawerType>MapMeshOnly</drawerType>
+		<naturalBuilding>true</naturalBuilding>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+	 	<designateHaulable>true</designateHaulable>
+	 	<storeCategories>
+			<li>Manufactured</li>
+		</storeCategories>
+		<saveCompressible>true</saveCompressible>
+		<stackLimit>10</stackLimit>
+		<texturePath>Things/Special/Droid/Part</texturePath>
+		<soundDrop>DebrisSlag_Drop</soundDrop>
+	</ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>DoBillsButcherMechanoid</defName>
+    <giverClass>AI.WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>70</priorityInType>
+    <workTableDef>TableDroidManufacturing</workTableDef>
+    <verb>assemble</verb>
+    <gerund>assembling</gerund>
+  </WorkGiverDef>
+  
+</WorkGivers>

@@ -4,8 +4,15 @@
 		<defName>DroidThinkTree</defName>
 		<thinkRoot Class="AI.ThinkNode_Priority">
 			<subNodes>
+				<li Class="AI.JobGiver_EmergencyShutdown" />
 				<li Class="AI.JobGiver_Droid" />
-				<li Class="AI.JobGiver_WanderAnywhere" />
+				<li Class="AI.ThinkNode_Tagger">
+					<tagToGive>Idle</tagToGive>
+					<subNodes>
+						<li Class="AI.JobGiver_WanderColony">
+						</li>
+					</subNodes>
+				</li>
 				<li Class="AI.JobGiver_IdleError"/>
 			</subNodes>
 		</thinkRoot>

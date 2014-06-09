@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+	<JobDef>
+		<defName>EmergencyShutdown</defName>
+		<driverClass>AI.JobDriver_EmergencyShutdown</driverClass>
+		<reportString>Shutting down.</reportString>
+	</JobDef>
+
+</JobDefs>

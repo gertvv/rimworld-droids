@@ -61,5 +61,66 @@
     </building>
     <researchPrerequisite>DroidAssembly</researchPrerequisite>
   </ThingDef>
-
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>DroidChargingStation</defName>
+    <eType>BuildingComplex</eType>
+    <label>Droid Charging Station</label>
+    <thingClass>Building_DroidCharger</thingClass>
+    <tickerType>Normal</tickerType>
+    <texturePath>Things/Building/ChargingStation</texturePath>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <maxHealth>100</maxHealth>
+    <flammability>2.0</flammability>
+    <description>Charges Droids when the pause here.</description>
+    <size>(1,1)</size>
+    <workToBuild>200</workToBuild>
+    <hasInteractionSquare>True</hasInteractionSquare>
+    <interactionSquareOffset>(0,0,0)</interactionSquareOffset>
+    <costList>
+      <li>
+        <thingDef>Metal</thingDef>
+        <count>50</count>
+      </li>
+    </costList>
+    <overdraw>false</overdraw>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>600</basePowerConsumption> <!-- At 50% efficiency, charges 12.5 Wd / hour => 24 * 12.5 * 2 => 600 Watt -->
+        <efficiency>0.5</efficiency>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+      <li>
+        <compClass>CompGlower</compClass>
+        <glowRadius>5</glowRadius>
+        <glowColor>(255,246,0,0)</glowColor>
+      </li>
+      <li>
+      	<compClass>CompDroidCharger</compClass>
+      </li>
+    </comps>
+    <killedLeavings>
+      <li>
+        <thingDef>DebrisSlag</thingDef>
+        <count>1</count>
+      </li>
+    </killedLeavings>
+    <filthLeavings>
+      <li>
+        <thingDef>SlagRubble</thingDef>
+        <count>2</count>
+      </li>
+    </filthLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <surfaceNeeded>Light</surfaceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <staticSunShadowHeight>0.1</staticSunShadowHeight>
+    <transmitsPower>false</transmitsPower>
+  </ThingDef>
+  
 </ThingDefs>

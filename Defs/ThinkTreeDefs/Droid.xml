@@ -5,6 +5,7 @@
 		<thinkRoot Class="AI.ThinkNode_Priority">
 			<subNodes>
 				<li Class="AI.JobGiver_EmergencyShutdown" />
+				<li Class="AI.JobGiver_DroidCharge" />
 				<li Class="AI.JobGiver_Droid" />
 				<li Class="AI.ThinkNode_Tagger">
 					<tagToGive>Idle</tagToGive>

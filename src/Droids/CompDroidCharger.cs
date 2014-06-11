@@ -1,0 +1,36 @@
+using System;
+using Verse;
+
+public class CompDroidCharger : ThingComp
+{
+	public CompDroidCharger ()
+	{
+	}
+
+	public override void CompTick() {
+		base.CompTick ();
+
+		// Find a DroidPawn exactly on our position
+		//Thing found = GenClosest.ClosestThingGlobal(this.parent.Position, Find.ListerPawns.AllPawns, 1);
+		Thing found = Find.ThingGrid.ThingAt<DroidPawn> (this.parent.Position);
+
+		// Find the CompPowerTrader
+		CompPowerTrader comp = this.parent.GetComp<CompPowerTrader> ();
+		if (comp == null) {
+			Log.Error ("CompDroidCharger in " + parent.def.defName + " needs a CompPowerTrader to function");
+			return;
+		}
+
+		float rate = 0.01f; // use 1% when not charging
+		if (found != null && found is DroidPawn) {
+			rate = 1f;
+			DroidPawn droid = (DroidPawn)found;
+			if (droid.storedEnergy < DroidPawn.storedEnergyMax) {
+				droid.storedEnergy += comp.def.basePowerConsumption * comp.def.efficiency * CompPower.WattsToWattDaysPerTick;
+			}
+		}
+
+		// set power consumption
+		comp.powerOutput = -rate * comp.def.basePowerConsumption;
+	}
+}

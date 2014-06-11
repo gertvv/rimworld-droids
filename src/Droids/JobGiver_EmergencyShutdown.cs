@@ -1,4 +1,5 @@
 using System;
+using Verse;
 
 namespace Verse.AI
 {
@@ -14,7 +15,7 @@ namespace Verse.AI
 				return null;
 			}
 
-			if (pawn.health < 25) {
+			if (pawn.health < DroidPawn.emergencyShutdownThreshold) {
 				return new Job (DefDatabase<JobDef>.GetNamed("EmergencyShutdown"));
 			}
 

@@ -45,6 +45,10 @@
     <Compile Include="DroidInactive.cs" />
     <Compile Include="JobDriver_EmergencyShutdown.cs" />
     <Compile Include="JobGiver_EmergencyShutdown.cs" />
+    <Compile Include="JobGiver_Charge.cs" />
+    <Compile Include="JobDriver_DroidCharge.cs" />
+    <Compile Include="CompDroidCharger.cs" />
+    <Compile Include="Building_DroidCharger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

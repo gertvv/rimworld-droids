@@ -2,16 +2,25 @@ using System;
 
 namespace Verse
 {
-	public class DroidInactive : Thing
+	public class DroidInactive : Thing, IDroid
 	{
 		private const String endStr = "Inactive";
 		public int age;
-		public float storedEnergy = DroidPawn.storedEnergyMax / 10;
+		public float storedEnergy = 0; //DroidPawn.storedEnergyMax / 10;
 		public int activateDelay = 100;
 
 		public DroidInactive ()
 		{
 			age = 0;
+		}
+
+		public float StoredEnergy {
+			get {
+				return storedEnergy;
+			}
+			set {
+				storedEnergy = value;
+			}
 		}
 
 		private void Activate() {
@@ -32,7 +41,7 @@ namespace Verse
 		public override void Tick ()
 		{
 			this.age++;
-			if (this.age > this.activateDelay && this.health > DroidPawn.emergencyShutdownThreshold && this.storedEnergy > 0f)
+			if (this.age > this.activateDelay && this.health > DroidPawn.emergencyShutdownThreshold && this.storedEnergy > 0.99 * DroidPawn.storedEnergyMax)
 			{
 				Activate ();
 			}
@@ -40,16 +49,12 @@ namespace Verse
 		
 		public override TipSignal GetTooltip () {
 			TipSignal tip = base.GetTooltip ();
-			tip.text += string.Concat (new string[] {
-				"\n",
-				"PowerBatteryStored".Translate (),
-				": ",
-				this.storedEnergy.ToString ("######0.0"),
-				" / ",
-				DroidPawn.storedEnergyMax.ToString ("######0.0"),
-				" Wd"
-			});
+			tip.text += "\n" + DroidPawn.StoredEnergyText(this);
 			return tip;
+		}
+
+		public override string GetInspectString () {
+			return base.GetInspectString () + DroidPawn.StoredEnergyText (this) + "\n";
 		}
 	}
 }

@@ -2,7 +2,7 @@ using System;
 using Verse.AI;
 namespace Verse
 {
-	public class DroidPawn : Pawn
+	public class DroidPawn : Pawn, IDroid
 	{
 		public float storedEnergy = 0; // set from the energy stored in the inactive droid
 		public const float emergencyShutdownThreshold = 25;
@@ -11,6 +11,15 @@ namespace Verse
 
 		public DroidPawn () : base()
 		{
+		}
+
+		public float StoredEnergy {
+			get {
+				return storedEnergy;
+			}
+			set {
+				storedEnergy = value;
+			}
 		}
 
 		public float EnergyPerTick
@@ -44,18 +53,25 @@ namespace Verse
 			base.Tick ();
 		}
 
-		public override TipSignal GetTooltip () {
-			TipSignal tip = base.GetTooltip ();
-			tip.text += string.Concat (new string[] {
-				"\n",
+		public static string StoredEnergyText(IDroid droid) {
+			return string.Concat (new string[] {
 				"PowerBatteryStored".Translate (),
 				": ",
-				this.storedEnergy.ToString ("######0.0"),
+				droid.StoredEnergy.ToString ("######0.0"),
 				" / ",
 				DroidPawn.storedEnergyMax.ToString ("######0.0"),
 				" Wd"
 			});
+		}
+
+		public override TipSignal GetTooltip () {
+			TipSignal tip = base.GetTooltip ();
+			tip.text += "\n" + StoredEnergyText (this);
 			return tip;
+		}
+
+		public override string GetInspectString () {
+			return base.GetInspectString () + StoredEnergyText (this) + "\n";
 		}
 	}
 }

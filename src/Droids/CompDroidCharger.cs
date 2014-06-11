@@ -13,6 +13,9 @@ public class CompDroidCharger : ThingComp
 		// Find a DroidPawn exactly on our position
 		//Thing found = GenClosest.ClosestThingGlobal(this.parent.Position, Find.ListerPawns.AllPawns, 1);
 		Thing found = Find.ThingGrid.ThingAt<DroidPawn> (this.parent.Position);
+		if (found == null) {
+			found = Find.ThingGrid.ThingAt<DroidInactive> (this.parent.Position);
+		}
 
 		// Find the CompPowerTrader
 		CompPowerTrader comp = this.parent.GetComp<CompPowerTrader> ();
@@ -22,11 +25,11 @@ public class CompDroidCharger : ThingComp
 		}
 
 		float rate = 0.01f; // use 1% when not charging
-		if (found != null && found is DroidPawn) {
+		if (found != null) {
 			rate = 1f;
-			DroidPawn droid = (DroidPawn)found;
-			if (droid.storedEnergy < DroidPawn.storedEnergyMax) {
-				droid.storedEnergy += comp.def.basePowerConsumption * comp.def.efficiency * CompPower.WattsToWattDaysPerTick;
+			IDroid droid = (IDroid)found;
+			if (droid.StoredEnergy < DroidPawn.storedEnergyMax) {
+				droid.StoredEnergy += comp.def.basePowerConsumption * comp.def.efficiency * CompPower.WattsToWattDaysPerTick;
 			}
 		}
 

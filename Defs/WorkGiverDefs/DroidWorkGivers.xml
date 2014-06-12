@@ -2,7 +2,7 @@
 <WorkGivers>
 
   <WorkGiverDef>
-    <defName>DoBillsButcherMechanoid</defName>
+    <defName>DoBillsDroidManufacturing</defName>
     <giverClass>AI.WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>70</priorityInType>

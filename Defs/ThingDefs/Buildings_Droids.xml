@@ -116,6 +116,24 @@
         <count>2</count>
       </li>
     </filthLeavings>
+    <defaultStorageSettings>
+		<priority>Important</priority>
+		<allowances>
+			<categories>
+				<li>DroidsInactive</li>
+			</categories>
+		</allowances>
+    </defaultStorageSettings>
+	<fixedStorageSettings>
+		<allowances>
+			<categories>
+				<li>DroidsInactive</li>
+			</categories>
+		</allowances>
+	</fixedStorageSettings>
+	<inspectorTabs>
+		<li>ITab_Storage</li>
+	</inspectorTabs>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <surfaceNeeded>Light</surfaceNeeded>
     <designationCategory>Misc</designationCategory>

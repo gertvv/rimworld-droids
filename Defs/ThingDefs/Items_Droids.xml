@@ -17,6 +17,11 @@
 			<baseHeight>0.4</baseHeight>
 			<tallness>0.2</tallness>
 		</sunShadowInfo>
+		<alwaysHaulable>true</alwaysHaulable>
+		<storeCategories>
+			<li>DroidsInactive</li>
+		</storeCategories>
+		<stackLimit>1</stackLimit> 
 	</ThingDef>
 
   	<ThingDef>

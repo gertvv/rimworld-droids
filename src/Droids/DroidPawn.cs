@@ -4,7 +4,7 @@ namespace Verse
 {
 	public class DroidPawn : Pawn, IDroid
 	{
-		public float storedEnergy = 0; // set from the energy stored in the inactive droid
+		public float storedEnergy = 50; // set from the energy stored in the inactive droid
 		public const float emergencyShutdownThreshold = 25;
 		public const float powerConsumption = 50; // a powered door uses 50.
 		public const float storedEnergyMax = 100; // A normal battery holds 1000.
@@ -38,6 +38,12 @@ namespace Verse
 			thing.health = base.health;
 			thing.storedEnergy = this.storedEnergy;
 			GenSpawn.Spawn (thing, base.Position);
+		}
+		
+		public override void SpawnSetup ()
+		{
+			base.SpawnSetup ();
+			this.inventory.container.TryAdd (ThingMaker.MakeThing (ThingDefOf.DoorKey));
 		}
 
 		public override void Tick () {

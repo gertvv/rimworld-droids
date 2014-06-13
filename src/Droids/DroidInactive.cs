@@ -6,7 +6,7 @@ namespace Verse
 	{
 		private const String endStr = "Inactive";
 		public int age;
-		public float storedEnergy = 0; //DroidPawn.storedEnergyMax / 10;
+		public float storedEnergy = 0;
 		public int activateDelay = 100;
 
 		public DroidInactive ()

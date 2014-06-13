@@ -11,4 +11,13 @@
     <gerund>assembling</gerund>
   </WorkGiverDef>
   
+  <WorkGiverDef>
+    <defName>RepairDroidsInactive</defName>
+    <giverClass>AI.WorkGiver_RepairDroidsInactive</giverClass>
+    <workType>Repair</workType>
+    <priorityInType>70</priorityInType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+  </WorkGiverDef>
+  
 </WorkGivers>

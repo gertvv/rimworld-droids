@@ -41,7 +41,7 @@ namespace Verse
 		public override void Tick ()
 		{
 			this.age++;
-			if (this.age > this.activateDelay && this.health > DroidPawn.emergencyShutdownThreshold && this.storedEnergy > 0.99 * DroidPawn.storedEnergyMax)
+			if (this.age > this.activateDelay && this.health >= this.def.maxHealth && this.storedEnergy > 0.99 * DroidPawn.storedEnergyMax)
 			{
 				Activate ();
 			}

@@ -4,7 +4,7 @@ namespace Verse
 {
 	public class DroidPawn : Pawn, IDroid
 	{
-		public float storedEnergy = 50; // set from the energy stored in the inactive droid
+		public float storedEnergy = 10; // set from the energy stored in the inactive droid
 		public const float emergencyShutdownThreshold = 25;
 		public const float powerConsumption = 50; // a powered door uses 50.
 		public const float storedEnergyMax = 100; // A normal battery holds 1000.

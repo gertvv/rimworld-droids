@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<TableDroidManufacturing.label>Bancada de fabricação de Droids</TableDroidManufacturing.label>
+	<TableDroidManufacturing.description>Uma bancada com ferramentas para montagem de Droids.</TableDroidManufacturing.description>
+
+	<DroidChargingStation.label>Estação de recarga Droid</DroidChargingStation.label>
+	<DroidChargingStation.description>Charges Droids when the pause here.</DroidChargingStation.description>
+  
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<BuildDroidPart.label>Construir parte do Droid</BuildDroidPart.label>
+	<BuildDroidPart.description>Cosntruir uma parte do Droid. (Necessário para Droids de suporte)</BuildDroidPart.description>
+	<BuildDroidPart.jobString>Building droid part.</BuildDroidPart.jobString>
+
+	<BuildDroidTransport.label>Construir Droid de transporte</BuildDroidTransport.label>
+	<BuildDroidTransport.description>Constrói um Droid de transporte</BuildDroidTransport.description>
+	<BuildDroidTransport.jobString>Building transport droid.</BuildDroidTransport.jobString>
+
+</LanguageData>

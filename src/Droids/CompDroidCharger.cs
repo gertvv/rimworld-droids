@@ -7,12 +7,19 @@ public class CompDroidCharger : ThingComp
 	{
 	}
 
+	Thing found = null;
+
 	public override void CompTick() {
 		base.CompTick ();
 
-		// Find a DroidPawn exactly on our position
-		//Thing found = GenClosest.ClosestThingGlobal(this.parent.Position, Find.ListerPawns.AllPawns, 1);
-		Thing found = Find.ThingGrid.ThingAt<DroidPawn> (this.parent.Position);
+		// Find a Droid exactly on our position
+		//  - keep charging the same droid if there are multiple
+		if (found != null && (found.Position != this.parent.Position || found.destroyed)) {
+			found = null;
+		}
+		if (found == null) {
+			found = Find.ThingGrid.ThingAt<DroidPawn> (this.parent.Position);
+		}
 		if (found == null) {
 			found = Find.ThingGrid.ThingAt<DroidInactive> (this.parent.Position);
 		}

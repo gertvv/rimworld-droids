@@ -28,7 +28,7 @@ public class CompDroidCharger : ThingComp
 		if (found != null) {
 			rate = 1f;
 			IDroid droid = (IDroid)found;
-			if (droid.StoredEnergy < DroidPawn.storedEnergyMax) {
+			if (comp.PowerOn && droid.StoredEnergy < DroidPawn.storedEnergyMax) {
 				droid.StoredEnergy += comp.def.basePowerConsumption * comp.def.efficiency * CompPower.WattsToWattDaysPerTick;
 			}
 		}

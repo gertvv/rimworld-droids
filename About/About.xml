@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Droids</name>
+  <author>gertvv (code), psyckosama (gfx)</author>
+  <url>http://ludeon.com/forums/index.php?topic=3940.0</url>
+  <targetVersion>Alpha 4</targetVersion>
+  <description>Adds the ability to build autonomous support Droids to RimWorld. Currently a transport (hauling) Droid only. Includes a research tree and a charging and repair system for Droids.</description>
+</ModMetaData>

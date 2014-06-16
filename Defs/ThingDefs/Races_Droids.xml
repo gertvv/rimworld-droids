@@ -32,6 +32,7 @@
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<isFlesh>false</isFlesh>
+			<diet>NeverEats</diet>
 			
 			<thinkTree>DroidThinkTree</thinkTree>
 			<walkSpeed>0.8</walkSpeed>

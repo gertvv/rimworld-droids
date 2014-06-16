@@ -8,7 +8,7 @@
 		<thingClass>DroidInactive</thingClass>
 		<tickerType>Normal</tickerType>
 		<texturePath>Things/Special/Droid/TransportInactive</texturePath>
-		<overdraw>false</overdraw>
+		<overdraw>true</overdraw>
 		<useStandardHealth>true</useStandardHealth>
 		<maxHealth>100</maxHealth>
 		<repairEffect>Repair</repairEffect>
@@ -16,7 +16,7 @@
 		<sunShadowInfo>
 			<baseWidth>0.4</baseWidth>
 			<baseHeight>0.4</baseHeight>
-			<tallness>0.2</tallness>
+			<tallness>0.8</tallness>
 		</sunShadowInfo>
 		<alwaysHaulable>true</alwaysHaulable>
 		<storeCategories>
@@ -35,7 +35,6 @@
 		<fillPercent>0.4</fillPercent>
 		<maxHealth>100</maxHealth>
 		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
 	 	<pathCost>55</pathCost>
 	 	<overdraw>false</overdraw>
 		<drawerType>MapMeshOnly</drawerType>

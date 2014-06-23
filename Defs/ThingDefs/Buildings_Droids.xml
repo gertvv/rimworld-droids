@@ -139,6 +139,7 @@
     <designationCategory>Misc</designationCategory>
     <staticSunShadowHeight>0.1</staticSunShadowHeight>
     <transmitsPower>false</transmitsPower>
+    <researchPrerequisite>DroidAssembly</researchPrerequisite>
   </ThingDef>
   
 </ThingDefs>

@@ -39,4 +39,26 @@ namespace Verse.AI
 			return null;
 		}
 	}
+
+	public class JobGiver_DroidCharge_Emergency : JobGiver_DroidCharge
+	{
+		public JobGiver_DroidCharge_Emergency () : base(0.08f, 9999f)
+		{
+		}
+	}
+	
+	public class JobGiver_DroidCharge_Safeguard : JobGiver_DroidCharge
+	{
+		public JobGiver_DroidCharge_Safeguard () : base(0.5f, 50f)
+		{
+		}
+	}
+
+	public class JobGiver_DroidCharge_Opportunistic : JobGiver_DroidCharge
+	{
+		public JobGiver_DroidCharge_Opportunistic () : base(0.9f, 10f)
+		{
+		}
+	}
+
 }

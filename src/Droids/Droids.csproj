@@ -51,8 +51,6 @@
     <Compile Include="IDroid.cs" />
     <Compile Include="WorkGiver_RepairDroidsInactive.cs" />
     <Compile Include="JobGiver_DroidCharge.cs" />
-    <Compile Include="JobGiver_DroidCharge_Emergency.cs" />
-    <Compile Include="JobGiver_DroidCharge_Convenience.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

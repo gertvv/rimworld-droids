@@ -8,8 +8,8 @@ the following:
   - Research Machining
   - Research Droid Manufacturing
   - Build a Droid Assembly Table
-  - Craft Droid Parts x4; costs 75 metal, requires crafting 8
-  - Craft Transport Droid; costs 4 droid parts, requires crafting 12
+  - Craft Droid Parts x4; costs 75 metal, requires crafting 7
+  - Craft Transport Droid; costs 4 droid parts, requires crafting 10
   - Build a Droid Charging Station to charge and activate the Droid
 
 Translations
@@ -39,6 +39,19 @@ Everything except content taken from RimWorld licensed CC-BY-SA 3.0.
 
 Changelog
 ---------
+
+Version 0.4 (in development):
+
+  - New graphics thanks to Psyckosama!
+  - Smarter charging behaviour:
+      - Droids check whether the station is powered on and available
+      - Droids will now try to charge at a nearby station before getting
+        to the "emergency" 8% charge level
+  - Lowered crafting level requirements
+  - Added About.xml for the Mods menu
+  - Bugfix: charging stations now only charge when actually powered on
+  - Bugfix: Droids no longer die of starvation
+  - Bugfix: charging station now properly requires research to build
 
 Version 0.3 (2014-06-13):
 

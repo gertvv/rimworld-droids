@@ -11,7 +11,7 @@ public class Building_DroidCharger : Building_Storage
 		return this.GetComp<CompDroidCharger>();
 	}
 
-	public bool IsOnAndAvailable() {
-		return GetComp<CompPowerTrader>().PowerOn && GetCharger().IsAvailable();
+	public bool IsOnAndAvailable(Pawn pawn) {
+		return GetComp<CompPowerTrader>().PowerOn && GetCharger().IsAvailable(pawn);
 	}
 }

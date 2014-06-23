@@ -9,8 +9,8 @@ public class CompDroidCharger : ThingComp
 
 	Thing found = null;
 
-	public bool IsAvailable() {
-		return found == null;
+	public bool IsAvailable(Pawn pawn) {
+		return found == null || found == pawn;
 	}
 
 	public override void CompTick() {

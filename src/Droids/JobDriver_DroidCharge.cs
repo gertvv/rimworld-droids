@@ -15,7 +15,7 @@ namespace Verse.AI
 			// Go to the charging pad, but stop trying if it isn't on or is taken.
 			Toil gotoToil = Toils_Goto.GotoThing (TargetIndex.A, PathMode.OnSquare);
 			gotoToil.AddFailCondition (() => {
-				return !building.IsOnAndAvailable();
+				return !building.IsOnAndAvailable(pawn);
 			});
 			yield return gotoToil;
 
@@ -29,7 +29,7 @@ namespace Verse.AI
 			};
 			chargeToil.defaultCompleteMode = ToilCompleteMode.Never;
 			chargeToil.AddFailCondition (() => {
-				return !building.IsOnAndAvailable();
+				return !building.IsOnAndAvailable(pawn);
 			});
 			chargeToil.AddEndCondition (() => {
 				if (droid.storedEnergy >= 0.99 * DroidPawn.storedEnergyMax) {

@@ -29,7 +29,7 @@ namespace Verse.AI
 				                                                       PathMode.OnSquare,
 				                                                       RegionTraverseParameters.For(pawn),
 				                                                       this.maxDistance,
-				                                                       (Thing thing) => { return ((Building_DroidCharger) thing).IsOnAndAvailable(); });
+				                                                       (Thing thing) => { return ((Building_DroidCharger) thing).IsOnAndAvailable(pawn); });
 
 				if (target != null) {
 					return new Job (DefDatabase<JobDef>.GetNamed ("DroidCharge"), new TargetPack (target));

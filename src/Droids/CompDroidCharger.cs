@@ -9,6 +9,10 @@ public class CompDroidCharger : ThingComp
 
 	Thing found = null;
 
+	public bool IsAvailable() {
+		return found == null;
+	}
+
 	public override void CompTick() {
 		base.CompTick ();
 

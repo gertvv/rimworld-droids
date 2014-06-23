@@ -10,11 +10,17 @@ namespace Verse.AI
 		}
 
 		protected override IEnumerable<Toil> MakeNewToils() {
-			yield return Toils_Goto.GotoThing (TargetIndex.A, PathMode.OnSquare);
+			Building_DroidCharger building = (Building_DroidCharger) TargetThingA;
 
-			Building building = (Building) TargetThingA;
+			// Go to the charging pad, but stop trying if it isn't on or is taken.
+			Toil gotoToil = Toils_Goto.GotoThing (TargetIndex.A, PathMode.OnSquare);
+			gotoToil.AddFailCondition (() => {
+				return !building.IsOnAndAvailable();
+			});
+			yield return gotoToil;
+
+			// Charge until at least 99% full, or the charger is off or taken.
 			DroidPawn droid = (DroidPawn)this.pawn;
-
 			Toil chargeToil = new Toil ();
 			chargeToil.initAction = () => {
 				if (building.Position != pawn.Position) {
@@ -23,7 +29,7 @@ namespace Verse.AI
 			};
 			chargeToil.defaultCompleteMode = ToilCompleteMode.Never;
 			chargeToil.AddFailCondition (() => {
-				return !building.GetComp<CompPowerTrader>().PowerOn;
+				return !building.IsOnAndAvailable();
 			});
 			chargeToil.AddEndCondition (() => {
 				if (droid.storedEnergy >= 0.99 * DroidPawn.storedEnergyMax) {

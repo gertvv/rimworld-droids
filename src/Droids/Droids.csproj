@@ -45,12 +45,14 @@
     <Compile Include="DroidInactive.cs" />
     <Compile Include="JobDriver_EmergencyShutdown.cs" />
     <Compile Include="JobGiver_EmergencyShutdown.cs" />
-    <Compile Include="JobGiver_Charge.cs" />
     <Compile Include="JobDriver_DroidCharge.cs" />
     <Compile Include="CompDroidCharger.cs" />
     <Compile Include="Building_DroidCharger.cs" />
     <Compile Include="IDroid.cs" />
     <Compile Include="WorkGiver_RepairDroidsInactive.cs" />
+    <Compile Include="JobGiver_DroidCharge.cs" />
+    <Compile Include="JobGiver_DroidCharge_Emergency.cs" />
+    <Compile Include="JobGiver_DroidCharge_Convenience.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

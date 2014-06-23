@@ -7,4 +7,11 @@ public class Building_DroidCharger : Building_Storage
 	{
 	}
 
+	public CompDroidCharger GetCharger() {
+		return this.GetComp<CompDroidCharger>();
+	}
+
+	public bool IsOnAndAvailable() {
+		return GetComp<CompPowerTrader>().PowerOn && GetCharger().IsAvailable();
+	}
 }

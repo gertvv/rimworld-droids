@@ -24,18 +24,13 @@ existing files as I've tried to use unique filenames.
 Credits
 -------
 
-Code and definitions by Gert van Valkenhoef, with some copy/paste from the
-RimWorld base game.
+Code and definitions by Gert van Valkenhoef [gertvv@ludeon](http://ludeon.com/forums/index.php?action=profile;u=7550); [gertvv@github](https://github.com/gertvv/).
 
-[Droid graphics](http://opengameart.org/content/robot-0) by the PlatForge
-project and Hannah Cohan.
-
-The droid manufacturing table graphic is simply a color-adjusted machining
-table, and I ruined the blasting charge to make the charging station graphic.
+Droid graphics by [Psyckosama](http://ludeon.com/forums/index.php?action=profile;u=2603).
 
 Portuguese translation by [decomg](http://ludeon.com/forums/index.php?action=profile;u=5968).
 
-Everything except content taken from RimWorld licensed CC-BY-SA 3.0.
+Everything licensed CC-BY-SA 3.0.
 
 Changelog
 ---------
@@ -57,7 +52,7 @@ Version 0.3 (2014-06-13):
 
   - Droids can now open doors.
   - Inactive droids can now be repaired by colonists.
-  - Add Portuguese translation by decomg
+  - Add Portuguese translation by decomg.
 
 Version 0.2 (2014-06-12):
 

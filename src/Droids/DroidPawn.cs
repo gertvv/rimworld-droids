@@ -44,6 +44,7 @@ namespace Verse
 		{
 			base.SpawnSetup ();
 			this.inventory.container.TryAdd (ThingMaker.MakeThing (ThingDefOf.DoorKey));
+			this.food = new Pawn_FoodTracker (this); // Workaround: HealthTracker won't work without this.food
 		}
 
 		public override void Tick () {
@@ -55,6 +56,8 @@ namespace Verse
 				shutdown ();
 				return;
 			}
+
+			this.food.Food.curLevel = 100f; // Workaround: HealthTracker won't work without this.food
 
 			base.Tick ();
 		}

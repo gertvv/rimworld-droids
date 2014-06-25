@@ -7,4 +7,5 @@ zip -r Droids_`cat Droids/VERSION`.zip \
   Droids/Languages/ \
   Droids/Textures/ \
   Droids/README.md \
-  Droids/src/
+  Droids/src/ \
+  Droids/About/

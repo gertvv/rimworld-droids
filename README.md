@@ -35,7 +35,7 @@ Everything licensed CC-BY-SA 3.0.
 Changelog
 ---------
 
-Version 0.4 (in development):
+Version 0.4 (2014-06-25):
 
   - New graphics thanks to Psyckosama!
   - Smarter charging behaviour:

@@ -1,5 +1,6 @@
 using System;
 using Verse;
+using RimWorld;
 
 public class CompDroidCharger : ThingComp
 {

@@ -3,13 +3,13 @@
 
 	<JobDef>
 		<defName>EmergencyShutdown</defName>
-		<driverClass>AI.JobDriver_EmergencyShutdown</driverClass>
+		<driverClass>JobDriver_EmergencyShutdown</driverClass>
 		<reportString>Shutting down.</reportString>
 	</JobDef>
 	
 	<JobDef>
 		<defName>DroidCharge</defName>
-		<driverClass>AI.JobDriver_DroidCharge</driverClass>
+		<driverClass>JobDriver_DroidCharge</driverClass>
 		<reportString>Charging batteries.</reportString>
 	</JobDef>
 

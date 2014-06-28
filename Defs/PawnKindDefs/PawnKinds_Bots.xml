@@ -5,8 +5,10 @@
 		<defName>DroidTransport</defName>
 		<label>Transport Droid</label>
 		<race>Droid</race>
+		<pointsCost>100</pointsCost>
 		<backStoryCategory>Hauling</backStoryCategory> <!-- The WorkType this droid accepts -->
 		<standardBodyGraphicPath>Things/Pawn/Droid/Transport</standardBodyGraphicPath>
+		<defaultFactionType>Droids</defaultFactionType>
 	</PawnKindDef>
 
 </PawnKindDefs>

@@ -2,21 +2,21 @@
 <ThinkTrees>
 	<ThinkTreeDef>
 		<defName>DroidThinkTree</defName>
-		<thinkRoot Class="AI.ThinkNode_Priority">
+		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
-				<li Class="AI.JobGiver_EmergencyShutdown" /> <!-- shut down when low on health -->
-				<li Class="AI.JobGiver_DroidCharge_Emergency" /> <!-- < 8% charged -->
-				<li Class="AI.JobGiver_DroidCharge_Safeguard" /> <!-- medium distance (< 50 sq.) and < 50% charged -->
-				<li Class="AI.JobGiver_DroidCharge_Opportunistic" /> <!-- very close (< 10 sq.) and < 90% charged -->
-				<li Class="AI.JobGiver_Droid" />
-				<li Class="AI.ThinkNode_Tagger">
+				<li Class="JobGiver_EmergencyShutdown" /> <!-- shut down when low on health -->
+				<li Class="JobGiver_DroidCharge_Emergency" /> <!-- < 8% charged -->
+				<li Class="JobGiver_DroidCharge_Safeguard" /> <!-- medium distance (< 50 sq.) and < 50% charged -->
+				<li Class="JobGiver_DroidCharge_Opportunistic" /> <!-- very close (< 10 sq.) and < 90% charged -->
+				<li Class="JobGiver_Droid" />
+				<li Class="ThinkNode_Tagger">
 					<tagToGive>Idle</tagToGive>
 					<subNodes>
-						<li Class="AI.JobGiver_WanderColony">
+						<li Class="JobGiver_WanderColony">
 						</li>
 					</subNodes>
 				</li>
-				<li Class="AI.JobGiver_IdleError"/>
+				<li Class="JobGiver_IdleError"/>
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>

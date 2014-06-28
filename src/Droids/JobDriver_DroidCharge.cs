@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-namespace Verse.AI
+using Verse;
+using Verse.AI;
+
+namespace RimWorld
 {
 	public class JobDriver_DroidCharge : JobDriver
 	{

@@ -1,4 +1,5 @@
 using System;
+using RimWorld;
 using Verse;
 
 public class Building_DroidCharger : Building_Storage

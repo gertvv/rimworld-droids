@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+
 using Verse;
 using Verse.AI;
 
-namespace Verse.AI
+namespace RimWorld
 {
 	public class JobGiver_Droid : JobGiver_WorkRoot
 	{
@@ -39,7 +40,7 @@ namespace Verse.AI
 					}
 					if (giver.def.scanThings)
 					{
-						Predicate<Thing> predicate = (Thing t) => !t.IsForbidden () && giver.StartingJobForOn (pawn, t) != null;
+						Predicate<Thing> predicate = (Thing t) => !t.IsForbidden (Faction.OfColony) && giver.StartingJobForOn (pawn, t) != null;
 						Predicate<Thing> validator = predicate;
 						Thing thing = GenClosest.ClosestThingReachable (pawn.Position, giver.PotentialWorkThingRequest, giver.PathMode, RegionTraverseParameters.For (pawn), 9999f, validator, giver.PotentialWorkThingsGlobal);
 						if (thing != null)

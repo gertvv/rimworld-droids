@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+
+  <!-- Colony faction -->
+  <FactionDef>
+		<defName>Droids</defName>
+		<label>Droids</label>
+		<description>Your own droids.</description>
+		<fixedName>a droid</fixedName>
+		<pawnsPlural>droids</pawnsPlural>
+		<techLevel>Spacer</techLevel>
+    	<humanoidFaction>false</humanoidFaction>
+    	<hidden>true</hidden>
+	    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	</FactionDef>
+	
+</FactionDefs>

@@ -1,7 +1,9 @@
 using System;
-using Verse;
 
-namespace Verse.AI
+using Verse;
+using Verse.AI;
+
+namespace RimWorld
 {
 	public class JobGiver_EmergencyShutdown : ThinkNode_JobGiver
 	{

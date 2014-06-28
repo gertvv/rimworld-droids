@@ -38,7 +38,6 @@
 	 	<pathCost>55</pathCost>
 	 	<overdraw>false</overdraw>
 		<drawerType>MapMeshOnly</drawerType>
-		<naturalBuilding>true</naturalBuilding>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 	 	<designateHaulable>true</designateHaulable>
 	 	<storeCategories>

@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Verse;
 
-namespace Verse.AI
+using Verse;
+using Verse.AI;
+
+namespace RimWorld
 {
 	public class JobGiver_DroidCharge : ThinkNode_JobGiver
 	{

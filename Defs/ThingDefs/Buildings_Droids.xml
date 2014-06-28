@@ -106,7 +106,7 @@
     </comps>
     <killedLeavings>
       <li>
-        <thingDef>DebrisSlag</thingDef>
+        <thingDef>ChunkSlag</thingDef>
         <count>1</count>
       </li>
     </killedLeavings>
@@ -116,21 +116,24 @@
         <count>2</count>
       </li>
     </filthLeavings>
-    <defaultStorageSettings>
+    <building>
+      <defaultStorageSettings>
 		<priority>Important</priority>
 		<allowances>
 			<categories>
 				<li>DroidsInactive</li>
 			</categories>
 		</allowances>
-    </defaultStorageSettings>
-	<fixedStorageSettings>
+      </defaultStorageSettings>
+	  <fixedStorageSettings>
 		<allowances>
 			<categories>
 				<li>DroidsInactive</li>
 			</categories>
 		</allowances>
-	</fixedStorageSettings>
+	  </fixedStorageSettings>
+      <transmitsPower>false</transmitsPower>
+	</building>
 	<inspectorTabs>
 		<li>ITab_Storage</li>
 	</inspectorTabs>
@@ -138,7 +141,6 @@
     <surfaceNeeded>Light</surfaceNeeded>
     <designationCategory>Misc</designationCategory>
     <staticSunShadowHeight>0.1</staticSunShadowHeight>
-    <transmitsPower>false</transmitsPower>
     <researchPrerequisite>DroidAssembly</researchPrerequisite>
   </ThingDef>
   

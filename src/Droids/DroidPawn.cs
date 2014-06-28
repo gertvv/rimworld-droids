@@ -1,5 +1,7 @@
 using System;
 using Verse.AI;
+using RimWorld;
+
 namespace Verse
 {
 	public class DroidPawn : Pawn, IDroid
@@ -57,7 +59,7 @@ namespace Verse
 				return;
 			}
 
-			this.food.Food.curLevel = 100f; // Workaround: HealthTracker won't work without this.food
+			this.food.Food.CurLevel = 100f; // Workaround: HealthTracker won't work without this.food
 
 			base.Tick ();
 		}

@@ -3,7 +3,7 @@
 
   <WorkGiverDef>
     <defName>DoBillsDroidManufacturing</defName>
-    <giverClass>AI.WorkGiver_DoBill</giverClass>
+    <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>70</priorityInType>
     <workTableDef>TableDroidManufacturing</workTableDef>
@@ -13,7 +13,7 @@
   
   <WorkGiverDef>
     <defName>RepairDroidsInactive</defName>
-    <giverClass>AI.WorkGiver_RepairDroidsInactive</giverClass>
+    <giverClass>WorkGiver_RepairDroidsInactive</giverClass>
     <workType>Repair</workType>
     <priorityInType>70</priorityInType>
     <verb>repair</verb>

@@ -1,6 +1,8 @@
 using System;
 
-namespace Verse
+using Verse;
+
+namespace RimWorld
 {
 	public class DroidInactive : Thing, IDroid
 	{
@@ -29,7 +31,7 @@ namespace Verse
 			if (kindName.EndsWith(endStr)) {
 				String pawnKindName = kindName.Remove (kindName.Length - endStr.Length);
 				PawnKindDef pawnKind = DefDatabase<PawnKindDef>.GetNamed (pawnKindName);
-				DroidPawn droid = (DroidPawn) PawnGenerator.GeneratePawn (pawnKind, null);
+				DroidPawn droid = (DroidPawn) PawnGenerator.GeneratePawn (pawnKind, Find.FactionManager.FirstFactionOfDef(DefDatabase<FactionDef>.GetNamed("Droids")));
 				droid.health = base.health;
 				droid.storedEnergy = this.storedEnergy;
 				GenSpawn.Spawn (droid, base.Position);

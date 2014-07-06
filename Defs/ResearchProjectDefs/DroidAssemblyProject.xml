@@ -5,7 +5,7 @@
 		<defName>DroidAssembly</defName>
 		<label>Droid assembly</label>
 		<description>Allows you to build support droids using the droid assembly table.</description>
-		<totalCost>45000</totalCost>
+		<totalCost>100000</totalCost>
 		<prerequisites>
 			<li>
 				<researchProjectDef>Machining</researchProjectDef>

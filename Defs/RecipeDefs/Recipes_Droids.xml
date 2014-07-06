@@ -6,7 +6,7 @@
 		<label>Build droid part</label>
 		<description>Builds a droid part (needed to build support droids).</description>
 		<jobString>Building droid part.</jobString>
-		<workAmount>500</workAmount>
+		<workAmount>2000</workAmount>
 		<workEffect>ConstructMetal</workEffect>
 		<workTimeSkillNeed>BuildDroidTime</workTimeSkillNeed>
 		<sustainerSoundDef>Recipe_ButcherCorpseMechanoid</sustainerSoundDef>
@@ -40,7 +40,7 @@
 		<skillGains>
 			<li>
 				<skill>Crafting</skill>
-				<xp>75</xp>
+				<xp>250</xp>
 			</li>
 		</skillGains>
 	</RecipeDef>
@@ -78,13 +78,13 @@
 		<skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>10</minLevel>
+				<minLevel>8</minLevel>
 			</li>
 		</skillRequirements>
 		<skillGains>
 			<li>
 				<skill>Crafting</skill>
-				<xp>350</xp>
+				<xp>750</xp>
 			</li>
 		</skillGains>
 	</RecipeDef>

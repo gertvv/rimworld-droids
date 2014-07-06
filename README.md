@@ -9,7 +9,7 @@ the following:
   - Research Droid Manufacturing
   - Build a Droid Assembly Table
   - Craft Droid Parts x4; costs 75 metal, requires crafting 7
-  - Craft Transport Droid; costs 4 droid parts, requires crafting 10
+  - Craft Transport Droid; costs 4 droid parts, requires crafting 8
   - Build a Droid Charging Station to charge and activate the Droid
 
 Translations
@@ -34,6 +34,13 @@ Everything licensed CC-BY-SA 3.0.
 
 Changelog
 ---------
+
+Version 0.5 (2014-07-06):
+
+  - Updated to Alpha 5
+  - Lowered crafting skill requirements
+  - Increased XP from crafting Droid parts and Droids
+  - Increased research cost and crafting effort
 
 Version 0.4 (2014-06-25):
 

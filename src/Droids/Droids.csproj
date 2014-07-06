@@ -32,10 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorld486LinuxDev_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorld486LinuxDev_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\RimWorld492Linux_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

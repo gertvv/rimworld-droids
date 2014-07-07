@@ -10,5 +10,15 @@
 		<standardBodyGraphicPath>Things/Pawn/Droid/Transport</standardBodyGraphicPath>
 		<defaultFactionType>Droids</defaultFactionType>
 	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>DroidCleaning</defName>
+		<label>Cleaning Droid</label>
+		<race>Droid</race>
+		<pointsCost>100</pointsCost>
+		<backStoryCategory>Cleaning</backStoryCategory> <!-- The WorkType this droid accepts -->
+		<standardBodyGraphicPath>Things/Pawn/Droid/Cleaning</standardBodyGraphicPath>
+		<defaultFactionType>Droids</defaultFactionType>
+	</PawnKindDef>
 
 </PawnKindDefs>

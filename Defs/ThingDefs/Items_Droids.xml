@@ -24,6 +24,30 @@
 		</storeCategories>
 		<stackLimit>1</stackLimit> 
 	</ThingDef>
+	
+	<ThingDef>
+		<defName>DroidCleaningInactive</defName>
+		<label>Cleaning Droid (inactive)</label>
+		<category>Item</category>
+		<thingClass>DroidInactive</thingClass>
+		<tickerType>Normal</tickerType>
+		<texturePath>Things/Special/Droid/CleaningInactive</texturePath>
+		<overdraw>true</overdraw>
+		<useStandardHealth>true</useStandardHealth>
+		<maxHealth>100</maxHealth>
+		<repairEffect>Repair</repairEffect>
+		<selectable>true</selectable>
+		<sunShadowInfo>
+			<baseWidth>0.4</baseWidth>
+			<baseHeight>0.4</baseHeight>
+			<tallness>0.8</tallness>
+		</sunShadowInfo>
+		<alwaysHaulable>true</alwaysHaulable>
+		<storeCategories>
+			<li>DroidsInactive</li>
+		</storeCategories>
+		<stackLimit>1</stackLimit> 
+	</ThingDef>
 
   	<ThingDef>
 	  	<defName>DroidPart</defName>

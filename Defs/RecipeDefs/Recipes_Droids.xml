@@ -89,6 +89,48 @@
 		</skillGains>
 	</RecipeDef>
 
-	
+	<RecipeDef>
+		<defName>BuildDroidCleaning</defName>
+		<label>Build cleaning droid</label>
+		<description>Builds a cleaning droid.</description>
+		<jobString>Building cleaning droid.</jobString>
+		<workAmount>1800</workAmount>
+		<workEffect>ConstructMetal</workEffect>
+		<workTimeSkillNeed>BuildDroidTime</workTimeSkillNeed>
+		<sustainerSoundDef>Recipe_ButcherCorpseMechanoid</sustainerSoundDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DroidPart</li>
+					</thingDefs>
+				</filter>
+				<count>3</count> <!-- 225 metal -->
+			</li>
+		</ingredients>
+		<products>
+			<li>
+				<thingDef>DroidCleaningInactive</thingDef>
+				<count>1</count>
+			</li>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DroidPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<skillGains>
+			<li>
+				<skill>Crafting</skill>
+				<xp>650</xp>
+			</li>
+		</skillGains>
+	</RecipeDef>
 	
 </RecipeDefs>

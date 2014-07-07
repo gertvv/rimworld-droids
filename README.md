@@ -12,6 +12,8 @@ the following:
   - Craft Transport Droid; costs 4 droid parts, requires crafting 8
   - Build a Droid Charging Station to charge and activate the Droid
 
+The cleaning droid follows the same process, but requires only 3 parts.
+
 Translations
 ------------
 
@@ -26,7 +28,8 @@ Credits
 
 Code and definitions by Gert van Valkenhoef [gertvv@ludeon](http://ludeon.com/forums/index.php?action=profile;u=7550); [gertvv@github](https://github.com/gertvv/).
 
-Droid graphics by [Psyckosama](http://ludeon.com/forums/index.php?action=profile;u=2603).
+Transport Droid and Charging Station graphics by [Psyckosama](http://ludeon.com/forums/index.php?action=profile;u=2603).
+Cleaning Droid graphics by [ITOS](http://ludeon.com/forums/index.php?action=profile;u=4591).
 
 Portuguese translation by [decomg](http://ludeon.com/forums/index.php?action=profile;u=5968).
 
@@ -34,6 +37,10 @@ Everything licensed CC-BY-SA 3.0.
 
 Changelog
 ---------
+
+Version 0.6 (in development):
+
+  - Added cleaning Droid (graphics by ITOS!)
 
 Version 0.5 (2014-07-06):
 
